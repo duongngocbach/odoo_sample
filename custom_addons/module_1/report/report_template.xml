@@ -1,0 +1,17 @@
+<odoo>
+  <template id="report_patient_id_card">
+      <t t-call="web.html_container">
+          <t t-foreach="docs" t-as="o">
+              <t t-call="web.external_layout">
+                  <div class="page">
+                      <h2>Report title</h2>
+                      <p>This object's name is <span t-field="o.name"/></p>
+                      <p>Date of Birth: <span t-field="o.dob"/></p>
+                      <p>Age: <span t-field="o.value"/></p>
+                      <p>Description: <span t-field="o.description"/></p>
+                  </div>
+              </t>
+          </t>
+      </t>
+  </template>
+</odoo>

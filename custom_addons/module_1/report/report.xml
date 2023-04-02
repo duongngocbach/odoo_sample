@@ -1,0 +1,22 @@
+<odoo>
+  <record id="report_xls" model="ir.actions.report">
+    <field name="name">Export Excel</field>
+    <field name="model">module_1.module_1</field>
+    <field name="report_type">xlsx</field>
+    <field name="report_name">module_1.report_patient_id_card_xls</field>
+    <field name="report_file">module_1.report_patient_id_card_xls</field>
+    <field name="binding_model_id" ref="model_module_1_module_1"/>
+    <field name="binding_type">report</field>
+  </record>
+
+  <record id="report_pdf" model="ir.actions.report">
+    <field name="name">Export PDF</field>
+    <field name="model">module_1.module_1</field>
+    <field name="report_type">qweb-pdf</field>
+    <field name="report_name">module_1.report_patient_id_card</field>
+    <field name="report_file">module_1.report_patient_id_card</field>
+    <field name="binding_model_id" ref="model_module_1_module_1"/>
+    <field name="binding_type">report</field>
+  </record>
+
+</odoo>
